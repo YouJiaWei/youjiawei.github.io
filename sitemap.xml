@@ -3,15 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://youjiawei.github.io/%20--buildDrafts/categories/</loc>
+    <loc>https://YouJiaWei.github.io/</loc>
+    <lastmod>2020-02-02T18:31:30+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://youjiawei.github.io/%20--buildDrafts/</loc>
+    <loc>https://YouJiaWei.github.io/post/</loc>
+    <lastmod>2020-02-02T18:31:30+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://youjiawei.github.io/%20--buildDrafts/tags/</loc>
+    <loc>https://YouJiaWei.github.io/post/blog/</loc>
+    <lastmod>2020-02-02T18:31:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://YouJiaWei.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://YouJiaWei.github.io/tags/</loc>
   </url>
   
 </urlset>

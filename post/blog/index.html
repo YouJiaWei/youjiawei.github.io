@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+使用 Hugo 生成静态博客教程
+</title>
+
+    
+
+
+  
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.63.2" />
+
+<link rel="canonical" href="https://YouJiaWei.github.io/post/blog/" />
+
+
+<meta property="og:title" content="使用 Hugo 生成静态博客教程" />
+<meta property="og:description" content="由于 Ghost 这个博客系统依赖 Nodejs，并且这货更新实在是太频繁，隔几天就得去服务器上 ghost update 一次，并不是很适合正式环境使用 并且由于国内众所周知的政策原因，本站域名 sb.sb 已主动申请注销备案，趁着服务器迁移到海外的功夫，顺便我就把烧饼博客更换成了 Hugo，以下为 Hugo 安装和使用教程 Hugo 是一款开源的使用 go 语言写的静态网站生成器，很适合数据量不大的个人博客使用 1、安装 Hugo 使用 Go 语言开发编译后的二进制文件并不需要任何依赖，直接在官方 Github 上下载最新的文件后解压即可运行，参考官网的安装教程 Windows 用户 直接下载适合自己系统版本的 zip 打包文件，比如 hugo_0.37.1_Windows-64bit.zip 然后解压在你本地的博客目录，比如 D:\Hugo 并得到文件 D:\Hugo\hugo.exe macOS 用户 首先安装 Homebrew 直接在终端运行 /usr/bin/ruby -e &ldquo;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; 然后直接使用 brew install hugo 即可 Linux 用户 下载对应的版本，解压后把 hugo 文件给予权限并放入 /usr/local/bin 目录即可 Debian / Ubuntu 用户也可以使用 sudo apt-get install hugo 安装 Hugo Arch Linux 用户可以使用 sudo pacman -Sy hugo 安装 Hugo Fedora 用户可以使用 sudo dnf install hugo 安装 Hugo 2、基本使用方法 Windows 用户推荐使用开源的 cmder 或 Git-bash 代替微软的 cmd." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://YouJiaWei.github.io/post/blog/" />
+<meta property="article:published_time" content="2020-02-02T18:31:30+09:00" />
+<meta property="article:modified_time" content="2020-02-02T18:31:30+09:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 Hugo 生成静态博客教程"/>
+<meta name="twitter:description" content="由于 Ghost 这个博客系统依赖 Nodejs，并且这货更新实在是太频繁，隔几天就得去服务器上 ghost update 一次，并不是很适合正式环境使用 并且由于国内众所周知的政策原因，本站域名 sb.sb 已主动申请注销备案，趁着服务器迁移到海外的功夫，顺便我就把烧饼博客更换成了 Hugo，以下为 Hugo 安装和使用教程 Hugo 是一款开源的使用 go 语言写的静态网站生成器，很适合数据量不大的个人博客使用 1、安装 Hugo 使用 Go 语言开发编译后的二进制文件并不需要任何依赖，直接在官方 Github 上下载最新的文件后解压即可运行，参考官网的安装教程 Windows 用户 直接下载适合自己系统版本的 zip 打包文件，比如 hugo_0.37.1_Windows-64bit.zip 然后解压在你本地的博客目录，比如 D:\Hugo 并得到文件 D:\Hugo\hugo.exe macOS 用户 首先安装 Homebrew 直接在终端运行 /usr/bin/ruby -e &ldquo;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; 然后直接使用 brew install hugo 即可 Linux 用户 下载对应的版本，解压后把 hugo 文件给予权限并放入 /usr/local/bin 目录即可 Debian / Ubuntu 用户也可以使用 sudo apt-get install hugo 安装 Hugo Arch Linux 用户可以使用 sudo pacman -Sy hugo 安装 Hugo Fedora 用户可以使用 sudo dnf install hugo 安装 Hugo 2、基本使用方法 Windows 用户推荐使用开源的 cmder 或 Git-bash 代替微软的 cmd."/>
+
+
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+
+
+
+  </head>
+
+  
+  <body>
+  
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/YouJiaWei.github.io\/'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment" id="dream-save-post-as-img">
+      <header style="margin-top: 0 !important;">
+        <h2 class="ui header">
+          使用 Hugo 生成静态博客教程
+          <div class="sub header">@  · Sunday, Feb 2, 2020 · 4 minute read · Update at Feb 2, 2020</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><p>由于 Ghost 这个博客系统依赖 Nodejs，并且这货更新实在是太频繁，隔几天就得去服务器上 ghost update 一次，并不是很适合正式环境使用
+并且由于国内众所周知的政策原因，本站域名 sb.sb 已主动申请注销备案，趁着服务器迁移到海外的功夫，顺便我就把烧饼博客更换成了 Hugo，以下为 Hugo 安装和使用教程
+Hugo 是一款开源的使用 go 语言写的静态网站生成器，很适合数据量不大的个人博客使用
+1、安装 Hugo
+使用 Go 语言开发编译后的二进制文件并不需要任何依赖，直接在官方 Github 上下载最新的文件后解压即可运行，参考官网的安装教程
+Windows 用户
+直接下载适合自己系统版本的 zip 打包文件，比如 hugo_0.37.1_Windows-64bit.zip 然后解压在你本地的博客目录，比如 D:\Hugo 并得到文件 D:\Hugo\hugo.exe
+macOS 用户
+首先安装 Homebrew 直接在终端运行
+/usr/bin/ruby -e &ldquo;$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install)%22">https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</a>
+然后直接使用 brew install hugo 即可
+Linux 用户
+下载对应的版本，解压后把 hugo 文件给予权限并放入 /usr/local/bin 目录即可
+Debian / Ubuntu 用户也可以使用 sudo apt-get install hugo 安装 Hugo
+Arch Linux 用户可以使用 sudo pacman -Sy hugo 安装 Hugo
+Fedora 用户可以使用 sudo dnf install hugo 安装 Hugo
+2、基本使用方法
+Windows 用户推荐使用开源的 cmder 或 Git-bash 代替微软的 cmd.exe / Powershell，因为这两货都自带了 git ssh 等常用命令并且灰常好用
+在当前目录执行 hugo help 即可查看 Hugo 基本的使用方法，下面以 cmder 为例，执行后即可看到 Hugo 所有的操作命令
+D:\Hugo</p>
+<p>λ hugo help                                                                                                                                                             <br>
+hugo is the main command, used to build your Hugo site.</p>
+<p>Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.</p>
+<p>Complete documentation is available at <a href="http://gohugo.io/">http://gohugo.io/</a>.</p>
+<p>Usage:
+hugo [flags]
+hugo [command]</p>
+<p>Available Commands:
+benchmark   Benchmark Hugo by building a site a number of times.
+check       Contains some verification checks
+config      Print the site configuration
+convert     Convert your content to different formats
+env         Print Hugo version and environment info
+gen         A collection of several useful generators.
+help        Help about any command
+import      Import your site from others.
+list        Listing out various types of content
+new         Create new content for your site
+server      A high performance webserver
+version     Print the version number of Hugo</p>
+<p>Flags:
+-b, &ndash;baseURL string             hostname (and path) to the root, e.g. <a href="http://spf13.com/">http://spf13.com/</a>
+-D, &ndash;buildDrafts                include content marked as draft
+-E, &ndash;buildExpired               include expired content
+-F, &ndash;buildFuture                include content with publishdate in the future
+&ndash;cacheDir string            filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+&ndash;canonifyURLs               (deprecated) if true, all relative URLs will be canonicalized using baseURL
+&ndash;cleanDestinationDir        remove files from destination not found in static directories
+&ndash;config string              config file (default is path/config.yaml|json|toml)
+-c, &ndash;contentDir string          filesystem path to content directory
+&ndash;debug                      debug output
+-d, &ndash;destination string         filesystem path to write files to
+&ndash;disableKinds stringSlice   disable different kind of pages (home, RSS etc.)
+&ndash;enableGitInfo              add Git revision, date and author info to the pages
+&ndash;forceSyncStatic            copy all files when static is changed.
+&ndash;gc                         enable to run some cleanup tasks (remove unused cache files) after the build
+-h, &ndash;help                       help for hugo
+&ndash;i18n-warnings              print missing translations
+&ndash;ignoreCache                ignores the cache directory
+-l, &ndash;layoutDir string           filesystem path to layout directory
+&ndash;log                        enable Logging
+&ndash;logFile string             log File path (if set, logging enabled automatically)
+&ndash;noChmod                    don&rsquo;t sync permission mode of files
+&ndash;noTimes                    don&rsquo;t sync modification time of files
+&ndash;pluralizeListTitles        (deprecated) pluralize titles in lists using inflect (default true)
+&ndash;preserveTaxonomyNames      (deprecated) preserve taxonomy names as written (&ldquo;Gérard Depardieu&rdquo; vs &ldquo;gerard-depardieu&rdquo;)
+&ndash;quiet                      build in quiet mode
+&ndash;renderToMemory             render to memory (only useful for benchmark testing)
+-s, &ndash;source string              filesystem path to read files relative from
+&ndash;stepAnalysis               display memory and timing of different steps of the program
+&ndash;templateMetrics            display metrics about template executions
+&ndash;templateMetricsHints       calculate some improvement hints when combined with &ndash;templateMetrics
+-t, &ndash;theme string               theme to use (located in /themes/THEMENAME/)
+&ndash;themesDir string           filesystem path to themes directory
+&ndash;uglyURLs                   (deprecated) if true, use /filename.html instead of /filename/
+-v, &ndash;verbose                    verbose output
+&ndash;verboseLog                 verbose logging
+-w, &ndash;watch                      watch filesystem for changes and recreate as needed</p>
+<p>Use &ldquo;hugo [command] &ndash;help&rdquo; for more information about a command.
+我们可以新建立一个博客叫 example
+hugo new site example
+此时会生成一个 example 文件夹， Windows 用户如果没有做 Path 的话，可以把 hugo.exe 复制到这个文件夹，然后修改自动生成的 config.toml 文件
+baseURL = &ldquo;<a href="http://example.com/%22">http://example.com/&quot;</a>
+title = &ldquo;My Hugo Site&rdquo;
+baseURL 即为你博客的域名， title 即为你博客的标题
+如果你对 Yaml 语法熟悉，也可以把改文件重命名为 config.yaml 并使用 Yaml 语法进行配置文件的操作修改，具体的 Hugo 配置文件信息在官网上写的很详细，用户可以根据自己的需求随时 DIY
+3、安装主题并生成本地网站
+默认的 Hugo 是不带任何主题的，你可以在官网上下载很多免费开源的主题，基本上所有的主题都会自带安装方法，并且每个主题的 config 配置文件基本是不一样的
+如果本地安装了 Git （Windows 用户如果安装了 cmder 会自带 Git），一般的主题都会托管在 Github，可以直接下载，比如官方所有的主题（文件有点大，可以自己选择下载）
+git clone &ndash;depth 1 &ndash;recursive <a href="https://github.com/gohugoio/hugoThemes.git">https://github.com/gohugoio/hugoThemes.git</a> themes
+如果本地没有安装 Git，那么你也可以直接下载该主题的 zip 打包文件，并解压到 themes 目录，然后修改 config.toml 或 config.yaml 增加一行
+theme: &ldquo;主题文件夹的名称&rdquo;
+然后使用 hugo server -D 即可访问 http://localhost:1313/ 查看本地安装好的 Hugo
+4、发布文章
+发布文章或页面的命令为
+hugo new post/new-post.md
+页面为
+hugo new new-page.md
+然后编辑 content 目录下的 .md 文件，使用 Markdown 语法写文章即可
+当然按照你下载使用的主题不同，可能会让你生成对应的文件，按照你使用的主题 readme.md 操作即可
+发布完内容，修改好主题后，我们可以使用 hugo 命令生成你的静态网站，默认所有的 HTML 文件都放在 public 目录
+5、同步网站到 Github 并使用 Github Pages 托管网站
+这部分网上教程非常多，首先在 GitHub 上创建一个 Repository，命名为 showfom.github.io
+把 config.toml 或 config.yaml 里的 basaeURL 修改为 <a href="https://showfom.github.io/">https://showfom.github.io/</a>
+然后进入你的 public 目录按照正常 Git 命令操作即可
+$ cd public
+$ git init
+$ git remote add origin <a href="https://github.com/Showfom/showfom.github.io.git">https://github.com/Showfom/showfom.github.io.git</a>
+$ git add -A
+$ git commit -m &ldquo;first commit&rdquo;
+$ git push -u origin master
+之后更新文章并生成好静态页面以后，就可以使用 Git push 来同步了
+$ cd public
+$ git add .
+$ git status
+$ git commit -m &ldquo;add blog post&rdquo;
+$ git push
+关于 Git 的使用说明，可以参考网络上的一大堆教程，这里不再重复。</p>
+</article>
+    </section>
+
+    <footer class="ui attached segment dream-tags">
+      
+          <a class="ui label">No Tags</a>
+      
+      <div
+        class="ui label"
+        style="float: right; background: #1b1c1d !important; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i> Save as image
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
+    <article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      
+    </div>
+
+    <h3 class="ui header">&#39;s blog<div class="sub header" style="margin-top: 0.5rem;"></div>
+    </h3>
+
+    <div class="ui horizontal list">
+      
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+    </div>
+  </section>
+
+  
+
+  
+
+  <section class="ui bottom attached center aligned segment">
+      
+      <p>© 2020 My New Hugo Site</p>
+      
+      <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+  </section>
+</article>
+
+  </div>
+</div>
+
+        </section>
+        <section class="back">
+          
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/YouJiaWei.github.io\/'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          <div class="ui centered relaxed grid dream-grid dream-back">
+  
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article>
+      <div class="ui top attached segment">
+        <h3 class="ui header">Social Links</h3>
+      </div>
+      <div class="ui attached segment">
+        <nav class="ui secondary menu dream-menu">
+          
+
+          
+
+          
+
+          
+
+          
+        </nav>
+      </div>
+    </article>
+  </section>
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </section>
+
+  
+  
+
+</div>
+
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+
+
+
+  </body>
+</html>
