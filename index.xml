@@ -2,30 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>https://YouJiaWei.github.io/</link>
+    <link>https://youjiawei.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Feb 2020 19:56:43 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 15:05:51 +0900</lastBuildDate>
     
-	<atom:link href="https://YouJiaWei.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://youjiawei.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>随便说一说</title>
+      <link>https://youjiawei.github.io/post/test2/</link>
+      <pubDate>Sat, 29 Feb 2020 15:05:51 +0900</pubDate>
+      
+      <guid>https://youjiawei.github.io/post/test2/</guid>
+      <description>第一次尝试搞博客，只是简单的先创一下。 有空的话会改善。</description>
+    </item>
+    
+    <item>
       <title>Introduction</title>
-      <link>https://YouJiaWei.github.io/post/test/</link>
+      <link>https://youjiawei.github.io/post/test/</link>
       <pubDate>Sun, 02 Feb 2020 19:56:43 +0900</pubDate>
       
-      <guid>https://YouJiaWei.github.io/post/test/</guid>
+      <guid>https://youjiawei.github.io/post/test/</guid>
       <description>welcome! My name is YouJiaWei. Thank you.</description>
     </item>
     
     <item>
       <title>使用 Hugo 生成静态博客教程</title>
-      <link>https://YouJiaWei.github.io/post/blog/</link>
+      <link>https://youjiawei.github.io/post/blog/</link>
       <pubDate>Sun, 02 Feb 2020 18:31:30 +0900</pubDate>
       
-      <guid>https://YouJiaWei.github.io/post/blog/</guid>
+      <guid>https://youjiawei.github.io/post/blog/</guid>
       <description>由于 Ghost 这个博客系统依赖 Nodejs，并且这货更新实在是太频繁，隔几天就得去服务器上 ghost update 一次，并不是很适合正式环境使用 并且由于国内众所周知的政策原因，本站域名 sb.sb 已主动申请注销备案，趁着服务器迁移到海外的功夫，顺便我就把烧饼博客更换成了 Hugo，以下为 Hugo 安装和使用教程 Hugo 是一款开源的使用 go 语言写的静态网站生成器，很适合数据量不大的个人博客使用 1、安装 Hugo 使用 Go 语言开发编译后的二进制文件并不需要任何依赖，直接在官方 Github 上下载最新的文件后解压即可运行，参考官网的安装教程 Windows 用户 直接下载适合自己系统版本的 zip 打包文件，比如 hugo_0.37.1_Windows-64bit.zip 然后解压在你本地的博客目录，比如 D:\Hugo 并得到文件 D:\Hugo\hugo.exe macOS 用户 首先安装 Homebrew 直接在终端运行 /usr/bin/ruby -e &amp;ldquo;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot; 然后直接使用 brew install hugo 即可 Linux 用户 下载对应的版本，解压后把 hugo 文件给予权限并放入 /usr/local/bin 目录即可 Debian / Ubuntu 用户也可以使用 sudo apt-get install hugo 安装 Hugo Arch Linux 用户可以使用 sudo pacman -Sy hugo 安装 Hugo Fedora 用户可以使用 sudo dnf install hugo 安装 Hugo 2、基本使用方法 Windows 用户推荐使用开源的 cmder 或 Git-bash 代替微软的 cmd.</description>
     </item>
     
