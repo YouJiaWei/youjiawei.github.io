@@ -6,10 +6,20 @@
     <description>Recent content in Posts on 游佳偉 &#39;s Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Feb 2020 16:36:58 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 16:47:04 +0900</lastBuildDate>
     
 	<atom:link href="https://youjiawei.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>汝は人狼なりや?</title>
+      <link>https://youjiawei.github.io/post/test9/</link>
+      <pubDate>Sat, 29 Feb 2020 16:47:04 +0900</pubDate>
+      
+      <guid>https://youjiawei.github.io/post/test9/</guid>
+      <description>プレイヤーはそれぞれが村人と村人に化けた人狼となり、自身の正体を隠し欺いたりしながら他のプレイヤーと交渉して相手の正体を探る。ゲームは半日単位で進行し、昼には全プレイヤーの投票により決まった人狼容疑者1名の処刑が、夜には人狼による村人の襲撃が行われる。これらによって死亡したプレイヤーは以後ゲームに参加できない。全ての人狼を処刑することができれば村人チームの勝ち、生き残った人狼と同数まで村人を減らすことができれば人狼チームの勝ちとなる。
+基本的なゲームの要素は、プレイヤーが秘密に割り振られた役職(村人、人狼、占い師など)を互いに推理し合うだけのシンプルなものである。しかし推理に必要な手がかりは一部の役職で断片的に知らされる他は、すべてをプレイヤー同士のやり取りから読み取らなければならない。よって、いかに相手を説得するか、あるいは巧妙に騙し続けるかの会話による駆け引きが重要な要素となる。またプレイヤーが自分たちで考案した追加ルールや、多種多様なローカル役職が存在することも特色に挙げられる。</description>
+    </item>
     
     <item>
       <title>ライアーゲーム</title>
