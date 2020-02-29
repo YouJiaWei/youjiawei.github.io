@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on 游佳偉 &#39;s Hugo Site</title>
     <link>https://youjiawei.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on 游佳偉 &#39;s Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Feb 2020 15:33:01 +0900</lastBuildDate>
@@ -21,16 +21,7 @@
     </item>
     
     <item>
-      <title>Test4</title>
-      <link>https://youjiawei.github.io/post/test4/</link>
-      <pubDate>Sat, 29 Feb 2020 15:32:57 +0900</pubDate>
-      
-      <guid>https://youjiawei.github.io/post/test4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>内容3</title>
+      <title>内容未定</title>
       <link>https://youjiawei.github.io/post/test3/</link>
       <pubDate>Sat, 29 Feb 2020 15:32:52 +0900</pubDate>
       
